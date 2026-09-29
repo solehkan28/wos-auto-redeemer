@@ -12,7 +12,7 @@ const headers = {
 };
 
 export async function readState() {
-  const url = `${repoUrl(config.statePath)}?ref=${encodeURIComponent(config.githubBranch)}`;
+  const url = `${repoUrl(config.statePath)}?ref=${encodeURIComponent(config.githubStateBranch)}`;
 
   const response = await fetch(url, { headers, cache: "no-store" });
 
@@ -47,7 +47,7 @@ export async function writeState(state, sha) {
   const body = {
     message: `chore: update giftcode listener state`,
     content,
-    branch: config.githubBranch
+    branch: config.githubStateBranch
   };
 
   if (sha) {
