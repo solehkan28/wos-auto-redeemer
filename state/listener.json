@@ -1,9 +1,4 @@
 {
-  "lastValidatedGiftcodeDatetime": "2026-08-07T10:08:38.000Z",
-  "pending": {
-    "giftcode": "26FullMoon",
-    "date": "2026-09-25T16:21:29.000Z",
-    "groupIndex": 1,
-    "fidIndex": 6
-  }
+  "lastValidatedGiftcodeDatetime": "2026-09-25T16:21:29.000Z",
+  "pending": null
 }
