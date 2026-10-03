@@ -2,7 +2,7 @@ name: WOS Auto Redeemer Listener
 
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "2-59/5 * * * *"
 
   workflow_dispatch:
 
@@ -14,7 +14,7 @@ jobs:
       - name: Hit WOS Listener
         run: |
           echo "========================================"
-          echo "WOS Listener"
+          echo "WOS Auto Redeemer Listener"
           echo "Time: $(date -u)"
           echo "========================================"
 
