@@ -1,0 +1,32 @@
+name: WOS Auto Redeemer Listener
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+
+  workflow_dispatch:
+
+jobs:
+  hit-listener:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Hit WOS Listener
+        run: |
+          echo "========================================"
+          echo "WOS Listener"
+          echo "Time: $(date -u)"
+          echo "========================================"
+
+          curl \
+            --fail \
+            --show-error \
+            --silent \
+            --location \
+            --max-time 30 \
+            --retry 3 \
+            --retry-delay 5 \
+            "https://wos-auto-redeemer.vercel.app/api/listener"
+
+          echo ""
+          echo "Listener completed successfully."
