@@ -1,9 +1,4 @@
 {
-  "lastValidatedGiftcodeDatetime": "2026-10-03T12:31:20.000Z",
-  "pending": {
-    "giftcode": "THXTeacher",
-    "date": "2026-10-05T15:23:40.000Z",
-    "groupIndex": 2,
-    "fidIndex": 97
-  }
+  "lastValidatedGiftcodeDatetime": "2026-10-05T15:23:40.000Z",
+  "pending": null
 }
